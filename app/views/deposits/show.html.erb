@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @deposit.amount %>
+</p>
+
+<p>
+  <strong>To:</strong>
+  <%= @deposit.to %>
+</p>
+
+<p>
+  <strong>From:</strong>
+  <%= @deposit.from %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @deposit.user %>
+</p>
+
+<%= link_to 'Edit', edit_deposit_path(@deposit) %> |
+<%= link_to 'Back', deposits_path %>
